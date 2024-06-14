@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoGallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="radio" name="Photos" id="check1" checked> 
+    <input type="radio" name="Photos" id="check2">
+    <input type="radio" name="Photos" id="check3">
+    <input type="radio" name="Photos" id="check4">
+    <input type="radio" name="Photos" id="check5">
+
+    <div class="container">
+        <h1>MY PHOTO GALLERY</h1>
+        <div class="top-content">
+            <h3>Photo Gallery</h3>
+            <label for="check1" class="selected" onclick="changeStyle(this)">All Photos</label>
+            <label for="check2" onclick="changeStyle(this)">Family Photos</label>
+            <label for="check3" onclick="changeStyle(this)">Childs Photos</label>
+            <label for="check4" onclick="changeStyle(this)">Visited Places</label>
+            <label for="check5" onclick="changeStyle(this)">Memorable Photos</label>
+        </div>
+
+        <div class="photo-gallery">
+            <div class="pic place">
+                <img src="Images/Visited Places/Visited Places (1).jpg">
+            </div>
+
+            <div class="pic family">
+                <img src="Images/Family Photos/family-photo-1.jpg">
+            </div>
+
+            <div class="pic child">
+                <img src="Images/Child Photos/child-photos-1.jpg">
+            </div>
+
+            <div class="pic memorable">
+                <img src="Images/Memorable Events/memorable-events-1.jpg">
+            </div>
+
+
+
+            <div class="pic place">
+                <img src="Images/Visited Places/Visited Places (2).jpg">
+            </div>
+
+            <div class="pic family">
+                <img src="Images/Family Photos/family-photo-2.jpg">
+            </div>
+
+            <div class="pic child">
+                <img src="Images/Child Photos/child-photos-2.jpg">
+            </div>
+
+            <div class="pic memorable">
+                <img src="Images/Memorable Events/memorable-events-2.jpg">
+            </div>
+
+
+
+            <div class="pic place">
+                <img src="Images/Visited Places/Visited Places (3).jpg">
+            </div>
+
+            <div class="pic family">
+                <img src="Images/Family Photos/family-photo-3.jpg">
+            </div>
+
+            <div class="pic child">
+                <img src="Images/Child Photos/child-photos-3.jpg">
+            </div>
+
+            <div class="pic memorable">
+                <img src="Images/Memorable Events/memorable-events-3.jpg">
+            </div>
+
+
+            <div class="pic place">
+                <img src="Images/Visited Places/Visited Places (4).jpg">
+            </div>
+
+            <div class="pic family">
+                <img src="Images/Family Photos/family-photo-4.jpg">
+            </div>
+
+            <div class="pic child">
+                <img src="Images/Child Photos/child-photos-4.jpg">
+            </div>
+
+            <div class="pic memorable">
+                <img src="Images/Memorable Events/memorable-events-4.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function changeStyle(label) {
+    var labels = document.querySelectorAll('.top-content label');
+    labels.forEach(function(el) {
+        el.classList.remove('selected');
+    });
+    label.classList.add('selected');
+}
+</script>
+
+</html>
